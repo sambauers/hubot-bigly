@@ -18,6 +18,11 @@ Then add **hubot-bigly** to your `external-scripts.json`:
 ]
 ```
 
+Add the following ENV vars wherever you need to put them:
+
+* `CIVIC_API_KEY` - Your Google Civic Information API key
+* `BIGLY_ATTITUDE` - 'downbeat' (default) or 'upbeat'
+
 ## Sample Interaction
 
 ```
