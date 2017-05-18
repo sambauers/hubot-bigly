@@ -60,3 +60,21 @@ isTrumpPresident = (robot, msg) ->
 module.exports = (robot) ->
   robot.hear /is( donald)? (trump|drumpf)( still)? president\??/i, (msg) ->
     isTrumpPresident(robot, msg)
+
+  great_things = [
+    'america',
+    robot.adapterName,
+    robot.name
+  ].join('|')
+  great_things_regex = new RegExp "make (#{great_things}) great again", 'i'
+
+  robot.hear great_things_regex, (msg) ->
+    c = '_circle:'
+    bc = ":large_blue#{c}"
+    rc = ":red#{c}"
+    wc = ":white#{c}"
+    br = ((bc for [0..8]).concat (rc for [0..10])).join('') + "\n"
+    bw = ((bc for [0..8]).concat (wc for [0..10])).join('') + "\n"
+    ww = (wc for [0..18]).join('') + "\n"
+    rr = (rc for [0..18]).join('') + "\n"
+    msg.send br + bw + br + bw + br + bw + br + ww + rr + ww + rr + ww + rr + "There, #{msg.match[1]} is great again. Happy now?"
