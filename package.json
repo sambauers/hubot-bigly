@@ -1,7 +1,7 @@
 {
   "name": "hubot-bigly",
   "description": "Find out whether a bigly event has happened yet. You'll need a Google Civic Information API key, and lot's of patience.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Sam Bauers <sam@wopr.com.au>",
   "license": "MIT",
 
