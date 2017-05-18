@@ -75,6 +75,6 @@ module.exports = (robot) ->
     wc = ":white#{c}"
     br = ((bc for [0..7]).concat (rc for [0..9])).join('') + "\n"
     bw = ((bc for [0..7]).concat (wc for [0..9])).join('') + "\n"
-    ww = (wc for [0..16]).join('') + "\n"
-    rr = (rc for [0..16]).join('') + "\n"
+    ww = (wc for [0..17]).join('') + "\n"
+    rr = (rc for [0..17]).join('') + "\n"
     msg.send br + bw + br + bw + br + bw + br + ww + rr + ww + rr + ww + rr + "There, #{msg.match[1]} is great again. Happy now?"
