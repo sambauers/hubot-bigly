@@ -22,6 +22,7 @@ Add the following ENV vars wherever you need to put them:
 
 * `CIVIC_API_KEY` - Your Google Civic Information API key
 * `BIGLY_ATTITUDE` - 'downbeat' (default) or 'upbeat'
+* `BIGLY_GREAT_THINGS` - Other great things that you want to make great again, besides America
 
 ## Sample Interaction
 
